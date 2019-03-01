@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/newText"
+        android:layout_marginTop="26dp" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/newText"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/photo"
+        android:background="@drawable/qipao"
+        android:gravity="center"
+        android:textColor="#ff00"
+        android:textSize="20sp" />
+
+
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/newPhoto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/newTime"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/newText"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/newTime"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@id/newPhoto"
+        android:background="@drawable/qi"
+        android:gravity="center"
+        android:textColor="#1296db"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

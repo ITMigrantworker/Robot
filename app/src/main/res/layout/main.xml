@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <Toolbar
+        android:id="@+id/tooBar"
+        android:background="#ff0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#ff00"
+            android:text="解决您的所有负面情绪"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </Toolbar>
+
+
+    <ImageView
+        android:layout_below="@id/tooBar"
+        android:background="@drawable/backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:layout_below="@id/tooBar"
+        android:id="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="请选择您的心情"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/boring"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/wuliao"
+        android:text="好无聊鸭"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/money"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/boring"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/rich"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/said"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/said"
+        android:layout_below="@id/money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/angry"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/said"
+        android:background="@drawable/zhishi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:textSize="28sp" />
+
+
+    <ImageButton
+        android:id="@+id/hurt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/angry"
+        android:background="@drawable/lei"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:textSize="28sp" />
+
+</RelativeLayout>

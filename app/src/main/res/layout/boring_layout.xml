@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Boring">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tooBar"
+        android:background="@color/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_back" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_below="@id/tooBar"
+        android:id="@+id/backGround"
+        android:background="@drawable/back2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:layout_below="@id/tooBar"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:text="朋友，玩儿游戏吧"
+        android:gravity="center_horizontal"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/robot"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_style"
+        android:text="聊天机器人"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/mathGame"
+        android:layout_marginTop="60dp"
+        android:text="猜数游戏"
+        android:background="@drawable/button_style"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:layout_below="@id/robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Change">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:background="@null"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_marginTop="50dp"
+        android:hint="用户名"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/psw"
+        android:background="@null"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:textSize="28sp"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/newpsw"
+        android:textSize="28sp"
+        android:background="@null"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:inputType="textPassword"
+        android:hint="新密码"
+        android:layout_below="@id/psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:background="@drawable/xiugai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

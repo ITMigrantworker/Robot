@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathGame">
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:background="@drawable/timg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tooBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mathGame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:background="@drawable/back1" />
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/game"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_below="@id/tooBar"
+        android:layout_marginTop="50sp"
+        android:text="请随机输入1-100的任意数字"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn"
+        android:id="@+id/answer"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/sure"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="80dp"
+        android:layout_height="60dp" />
+
+
+</RelativeLayout>

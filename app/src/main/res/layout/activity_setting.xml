@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:background="@drawable/fanhui"
+        android:layout_margin="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/setting" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setting"
+        android:text="清除聊天记录"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
